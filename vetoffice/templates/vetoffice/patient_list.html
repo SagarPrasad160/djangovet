@@ -18,6 +18,8 @@
     <td>{{pet.pet_name}}</td>
     <td>{{pet.age}}</td>
     <td>{{pet.owner}}</td>
+    <td><a href="{% url 'patientupdate' pet.id %}">Edit</a></td>
+    <td><a href="{% url 'patientdelete' pet.id %}">Delete</a></td>
   </tr>
   {% endfor %}
  </table>

@@ -2,12 +2,13 @@ from django import forms
 
 from .models import Patient,Owner
 
-class OwnerCreateForm(forms.ModelForm):
+class OwnerForm(forms.ModelForm):
   class Meta:
     model = Owner
-    fields = ("first_name","last_name","phone")
+    fields = "__all__"
 
-class PatientCreateForm(forms.ModelForm):
+class PatientForm(forms.ModelForm):
   class Meta:
     model = Patient
-    fields = ('animal_type','breed','pet_name','age','owner')    
+    fields = "__all__"
+

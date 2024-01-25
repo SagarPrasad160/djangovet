@@ -7,7 +7,7 @@ class Owner(models.Model):
   phone = models.CharField(max_length=20)
 
   def get_absolute_url(self):
-    return 'list'
+    return '/owner/list'
 
 
 class Patient(models.Model):
@@ -30,7 +30,7 @@ class Patient(models.Model):
   owner = models.ForeignKey(Owner,on_delete=models.CASCADE)
 
   def get_absolute_url(self):
-    return 'list'
+    return '/patient/list'
 
 
 
