@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'vetoffice/styles.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <a href="{% url 'home' %}"><h1>Vet Office</h1></a>
+  <h3>Welcome to Vet Office!</h3>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
